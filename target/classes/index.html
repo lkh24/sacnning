@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>扫码确认</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 300px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        #status {
+            margin-top: 20px;
+        }
+    </style>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsqr/dist/jsQR.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var qrCodeStatus = '未确认';
+            // 获取二维码图片
+            $.get("http://localhost:8888/api/qrcode", {content: "hello world", width: 200, height: 200}, function(imgData) {
+                // 将图片数据转换为 Blob 对象
+                let blob = new Blob([imgData], {type: "image/png"});
+                let imgUrl = URL.createObjectURL(blob);
+
+                // 将图片插入 HTML 中
+                let imgElem = $("<img>").attr("src", imgUrl).attr("id", "qrCode");
+
+                // 监听图片加载完成后触发扫描事件
+                imgElem.on("load", function() {
+                    // 使用 qrcode.js 库解码二维码图片
+                    let qrcode = new QRCode(imgElem[0]);
+                    let result = qrcode.decode();
+
+                    // 如果解码成功，展示一个确认弹窗
+                    if (result) {
+                        let confirmed = window.confirm("解析到二维码内容：" + result + "\n是否继续查看？");
+
+                        // 如果用户点击“确定”按钮，则展示一个警告框
+                        if (confirmed) {
+                            window.alert("您点击了确定！");
+                        }
+                    }
+                });
+                // 在发生错误时也要释放资源
+                imgElem.on("error", function() {
+                    URL.revokeObjectURL(imgUrl);
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="container">
+<!--        <canvas id="scan-canvas" style="width: 300px; height: 300px;"></canvas>-->
+        <h1>扫码确认页面</h1>
+        <img id="qrCode" src="" alt="QR Code">
+    </div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+/Volumes/code/javaEE/sacnning/src/main/java/kh/cn/Application.java
+/Volumes/code/javaEE/sacnning/src/main/java/kh/cn/util/RandomStringGenerator.java
+/Volumes/code/javaEE/sacnning/src/main/java/kh/cn/server/CheckInServer.java
+/Volumes/code/javaEE/sacnning/src/main/java/kh/cn/controller/CheckInController.java
+/Volumes/code/javaEE/sacnning/src/main/java/kh/cn/util/QRCodeUtil.java
+/Volumes/code/javaEE/sacnning/src/main/java/kh/cn/util/config/MinioConfig.java
+/Volumes/code/javaEE/sacnning/src/main/java/kh/cn/util/CacheUtil.java
+/Volumes/code/javaEE/sacnning/src/main/java/kh/cn/util/MinioUtil.java
+/Volumes/code/javaEE/sacnning/src/main/java/kh/cn/util/config/CacheConfig.java

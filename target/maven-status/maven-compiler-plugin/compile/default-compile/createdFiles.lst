@@ -1,0 +1,9 @@
+kh/cn/util/config/CacheConfig.class
+kh/cn/util/CacheUtil.class
+kh/cn/util/config/MinioConfig.class
+kh/cn/controller/CheckInController.class
+kh/cn/util/MinioUtil.class
+kh/cn/util/RandomStringGenerator.class
+kh/cn/Application.class
+kh/cn/server/CheckInServer.class
+kh/cn/util/QRCodeUtil.class

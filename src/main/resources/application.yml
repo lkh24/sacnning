@@ -1,0 +1,13 @@
+# Minio配置
+minio:
+  # minio配置的地址，端口9000
+  url: http://youpath
+  # 账号
+  accessKey: youAccount
+  # 密码
+  secretKey: youPassword
+  # MinIO桶名字
+  bucketName: qrcodestore
+
+server:
+  port: 8888
