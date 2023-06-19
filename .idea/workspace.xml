@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="967ee42b-9303-468e-8750-0272bc765438" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="967ee42b-9303-468e-8750-0272bc765438" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,6 +48,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Volumes/code/javaEE/sacnning/pom.xml&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -117,7 +116,14 @@
       <workItem from="1683558625838" duration="4595000" />
       <workItem from="1683688628489" duration="6278000" />
       <workItem from="1684246456435" duration="1443000" />
-      <workItem from="1684728916920" duration="3277000" />
+      <workItem from="1684728916920" duration="5351000" />
+      <workItem from="1684816580017" duration="408000" />
+      <workItem from="1685329921015" duration="39000" />
+      <workItem from="1685343912154" duration="199000" />
+      <workItem from="1685844298478" duration="85000" />
+      <workItem from="1685973867522" duration="597000" />
+      <workItem from="1686998277771" duration="609000" />
+      <workItem from="1687181852242" duration="308000" />
     </task>
     <servers />
   </component>
